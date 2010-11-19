@@ -1,0 +1,6 @@
+// $Id$
+
+Services Accept Origin 6.x 0.1-Alpha1, 2010-11-19
+------------------------------------------------------------------------------
+by Simon Ljungberg: Initial Version.
+by Simon Ljungberg: Implemented endpoint configuration and authentication callback.

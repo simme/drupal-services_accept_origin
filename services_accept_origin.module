@@ -1,0 +1,20 @@
+<?php
+// $Id$
+/**
+ * @file
+ *  Let's the user whitelist origins to allow them access via XMLHttpRequests.
+ */
+
+/**
+ * Implementation of hook_services_authentication_info().
+ */
+function services_accept_origin_services_authentication_info() {
+  return array(
+    'file'                => 'services_accept_origin.inc',
+    'title'               => t('Accept Origin'),
+    'description'         => t('Adds accepted origins to headers.'),
+    'security_settings'   => '_services_accept_origin_settings',
+    'authenticate_call'   => '_services_accept_origin_authenticate',
+    'controller_settings' => '_services_accept_origin_controller_settings',
+  );
+}

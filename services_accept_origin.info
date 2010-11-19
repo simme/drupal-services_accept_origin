@@ -1,0 +1,6 @@
+; $Id$
+name=Accept Origin
+description=Let's you specify accepted origins for services requests. Useful if you want to allow cross domains XMLHttpRequests.
+core=6.x
+package = Services - authentication
+dependencies[] = services
