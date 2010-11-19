@@ -27,7 +27,7 @@ function _services_accept_origin_settings($settings) {
     '#default_value'  => $whitelist,
   );
 
-  $nop = !empty($settings['no_origin_policy']) ? $settings['no_origin_policy'] : TRUE;
+  $nop = (bool)$settings['no_origin_policy'];
   $form['no_origin_policy'] = array(
     '#description'    => t('Unchecking this box means that all requests
                             without an ORIGIN header will be allowed access.
@@ -69,7 +69,7 @@ function _services_accept_origin_authenticate($settings, $method, $args) {
     if ($settings['no_origin_policy']) {
       return;
     } else {
-      return FALSE;
+      return 'Unauthorized origin.';
     }
   }
 
