@@ -75,7 +75,13 @@ function _services_accept_origin_authenticate($settings, $method, $args) {
 
   // Determine if the domain is whitelisted, compensates for traling slashs and stuff
   foreach ($whitelist as $domain) {
-    if (strpos($domain, $origin) === 0) {
+    // Make star always pass requests through
+    if ($domain == '*') {
+      $origin_is_whitelisted = TRUE;
+      $origin = $domain;
+      break;
+    }
+    else if (strpos($domain, $origin) === 0) {
       $origin_is_whitelisted = TRUE;
       break;
     }
