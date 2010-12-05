@@ -1,7 +1,7 @@
 Services Accept Origin
 ----------------------
 
-This is an authentication module for [Services](http://drupal.org/project/services).
+This is an authentication module for Services (http://drupal.org/project/services).
 
 It let's you specify a whitelist of domains. Domains in this whitelist will then
 be allowed to make cross domain XMLHttpRequests. This works by setting the
