@@ -1,6 +1,6 @@
 ; $Id$
 name=Accept Origin
-description=Let's you specify accepted origins for services requests. Useful if you want to allow cross domains XMLHttpRequests.
+description=Let's you specify accepted origins for services requests. Useful if you want to allow cross domains XMLHttpRequests. Please note that this module does not actually hinder origins not whitelisted from accessing the content, that's up to the browser to do.
 core=6.x
 package = Services - authentication
 dependencies[] = services
