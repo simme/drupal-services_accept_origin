@@ -45,7 +45,7 @@ function _services_accept_origin_controller_settings($settings, $controller, $en
  * Authenticates a call by checking the origin agains the whitelist.
  *
  * @param     array         $settings
-  *  The settings for the authentication module.
+ *  The settings for the authentication module.
  * @param     array         $method
  *  The method that's being called
  * @param     array         $args
