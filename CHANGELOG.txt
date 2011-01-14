@@ -1,5 +1,9 @@
 // $Id$
 
+Services Accept Origin 6.x 0.1-Alpha2, 2011-01-14
+------------------------------------------------------------------------------
+by Simon Ljungberg: Fixed issues pointed out in my CVS application thread. See http://drupal.org/node/976620
+
 Services Accept Origin 6.x 0.1-Alpha1, 2010-11-19
 ------------------------------------------------------------------------------
 by Simon Ljungberg: Initial Version.
